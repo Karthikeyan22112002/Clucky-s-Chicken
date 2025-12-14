@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Clucky's Chicken</title>
+    <link rel="stylesheet" href="cart.css">
+     <link rel="icon" href="../html tasks/images/chicken_.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="home.html" class="logo">Clucky's <img src="../html tasks/images/chicken_.png" alt="" height="35px"></a>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Menu</a></li>
+                    <li><a href="cart.html" class="active">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <h1><img src="../html tasks/images/chicken_.png" alt="">YOUR CHICKEN CART<img src="../html tasks/images/chicken-grilled-stream-solid_.png" alt=""></h1>
+    </section>
+
+    <main class="container cart-wrapper">
+        
+        <div id="cart-list-container" class="cart-list">
+            </div>
+
+        <div class="total-section">
+            <div class="subtotal-row">
+                <span>Subtotal</span>
+                <span id="grand-total">$0.00</span>
+            </div>
+            <p class="shipping-text">Tax included. Shipping calculated at checkout.</p>
+            <button class="btn-checkout" onclick="placeOrder()">CHECK OUT</button>
+        </div>
+
+    </main>
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="order-confirmed-title">✅ ORDER CONFIRMED</h2>
+            <p>Thank you for shopping with Clucky's.</p>
+            <p>We are preparing your crispy order now!</p>
+            <br>
+            <button class="btn-text" onclick="closeModal()">BACK TO HOME</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-simple">
+            <div class="footer-links-row">
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-bottom">
+                <div class="socials">
+                    <span><img src="../html tasks/images/facebook_.png" alt=""></span> <span><img src="../html tasks/images/instagram_.png" alt=""></span> <span><img src="../html tasks/images/twitter_.png" alt=""></span>
+                </div>
+                <p>&copy; 2025 Clucky's Chicken.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
